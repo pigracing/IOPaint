@@ -27,7 +27,7 @@ jobs:
           file: ./docker/CPUDockerfile   # 指定 Dockerfile 路径
           tags: ricebug/iopaint-cpu:latest
           build-args: |
-             VERSION=1.5.3
+             version=1.5.3
     
     - name: Build iopaint-gpu
       uses: docker/build-push-action@v4
@@ -37,4 +37,4 @@ jobs:
           file: ./docker/GPUDockerfile   # 指定 Dockerfile 路径
           tags: ricebug/iopaint-gpu:latest
           build-args: |
-             VERSION=1.5.3
+             version=1.5.3
