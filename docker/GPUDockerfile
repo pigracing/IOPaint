@@ -11,7 +11,7 @@ RUN pip3 install xformers==0.0.22.post4 --index-url https://download.pytorch.org
 
 ARG version 
 
-RUN pip3 install lama-cleaner==1.5.3
+RUN pip3 install lama-cleaner
 RUN lama-cleaner --install-plugins-package
 
 EXPOSE 8080
