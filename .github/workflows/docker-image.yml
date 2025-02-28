@@ -26,6 +26,7 @@ jobs:
           context: .
           file: ./docker/CPUDockerfile   # 指定 Dockerfile 路径
           tags: ricebug/iopaint-cpu:latest
+          version: 1.5.3
           build-args: |
              version=1.5.3
     
@@ -36,5 +37,6 @@ jobs:
           context: .
           file: ./docker/GPUDockerfile   # 指定 Dockerfile 路径
           tags: ricebug/iopaint-gpu:latest
+          version: 1.5.3
           build-args: |
              version=1.5.3
